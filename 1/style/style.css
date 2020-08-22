@@ -74,11 +74,11 @@ h3 {
   padding-left: 100px;
   margin-bottom: 100px;
   flex-grow: 1;
-  background: url(../img/icon_plus_off.png) no-repeat 0 0;
+  background: url(../img/icon_plus_off.svg) no-repeat 0 0;/* Параметры фона */
 }
 
 li:hover {
-  background: url(../img/icon_plus_on.png) no-repeat 0 0; /* Параметры фона */
+  background: url(../img/icon_plus_on.svg) no-repeat 0 0; /* Параметры фона при наведении */
 }
 .img-fluid img {
   max-width: 673.46px;
@@ -104,18 +104,21 @@ li:hover {
   margin-top: -100px;
   margin-bottom: 15px;
 }
+/* выделение в текстовом блоке */
 .list span {
   color: deeppink;
   font-weight: bold;
 }
+/* всплывает текстовый блок при наведении */
 .list-none:hover .list {
   display: block;
 }
+/* прячется текстовый блок при клике */
 .list-none:active .list {
   display: none;
   transition: left 0.3s ease;
 }
-
+/* адаптив */
 @media screen and (max-width: 768px) {
   .box {
     max-width: 750px;
